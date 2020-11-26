@@ -1,3 +1,20 @@
+.navLink{
+  text-decoration: none;
+  border: 2px solid rgb(3, 221, 255);
+  color: black;
+padding: 5px;
+}
+.App-header{
+  text-align: center;
+  margin: 20px;
+}
+.activeNavLink{
+  border: 5px solid rgb(55, 255, 0);
+}
+.content{
+ 
+}
+
 /* .App {
   text-align: center;
 }
@@ -36,3 +53,6 @@
     transform: rotate(360deg);
   }
 } */
+
+
+
