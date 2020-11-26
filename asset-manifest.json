@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/noirkotyara/yalantisTest/static/css/main.4296a53f.chunk.css",
+    "main.js": "/noirkotyara/yalantisTest/static/js/main.e79a1d68.chunk.js",
+    "main.js.map": "/noirkotyara/yalantisTest/static/js/main.e79a1d68.chunk.js.map",
+    "runtime-main.js": "/noirkotyara/yalantisTest/static/js/runtime-main.91157cab.js",
+    "runtime-main.js.map": "/noirkotyara/yalantisTest/static/js/runtime-main.91157cab.js.map",
+    "static/js/2.8a477b94.chunk.js": "/noirkotyara/yalantisTest/static/js/2.8a477b94.chunk.js",
+    "static/js/2.8a477b94.chunk.js.map": "/noirkotyara/yalantisTest/static/js/2.8a477b94.chunk.js.map",
+    "static/js/3.6b1e2a1e.chunk.js": "/noirkotyara/yalantisTest/static/js/3.6b1e2a1e.chunk.js",
+    "static/js/3.6b1e2a1e.chunk.js.map": "/noirkotyara/yalantisTest/static/js/3.6b1e2a1e.chunk.js.map",
+    "index.html": "/noirkotyara/yalantisTest/index.html",
+    "static/css/main.4296a53f.chunk.css.map": "/noirkotyara/yalantisTest/static/css/main.4296a53f.chunk.css.map",
+    "static/js/2.8a477b94.chunk.js.LICENSE.txt": "/noirkotyara/yalantisTest/static/js/2.8a477b94.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91157cab.js",
+    "static/js/2.8a477b94.chunk.js",
+    "static/css/main.4296a53f.chunk.css",
+    "static/js/main.e79a1d68.chunk.js"
+  ]
+}
