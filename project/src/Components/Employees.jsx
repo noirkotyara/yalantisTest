@@ -11,7 +11,7 @@ const Employees = React.memo(props => {
         
     }, [props.items.length]);
 
-    let answer = [];
+   
     let isEmpty;
     
     let checkboxChoose = (id, e) => {
@@ -38,7 +38,8 @@ const Employees = React.memo(props => {
 
     useEffect(() => {
         if(props.items.length !=0 ){
-           props.setUsers(checkboxs);  
+            props.setUsers([]); 
+            props.setUsers(checkboxs);  
         }
 
     }, [checkboxs, props.items.length]); 
@@ -94,7 +95,7 @@ const Employees = React.memo(props => {
             </div>
         </div>
         <div className={style.empBirthday}>
-            Diana`s Birthday
+           Employees Birthdays
             {/* Прізвище Імя - день(31) Місяць, рік(1944) year*/}
             {
                 props.months.map(
@@ -106,7 +107,7 @@ const Employees = React.memo(props => {
                                 {month.name}
                             </h3>
                             {
-                                month.id.map(user => {debugger; return <div> {user.lastName + ' ' + ' ' + user.firstName } </div> })
+                                month.id.map(user => { return <div> {user.lastName + ' ' + ' ' + user.firstName } </div> })
                             }
                         </div>
                     }
@@ -118,27 +119,3 @@ const Employees = React.memo(props => {
 });
 export default Employees;
 
-// try {
-//     return batchedEventUpdatesImpl(fn, a, b);
-//   } finally {
-//     isBatchingEventUpdates = false;
-//     finishEventHandler();
-//   }
-
-// for(let i = 1; i <= Math.ceil(26/5); i++){
-                        //     for(let p = 1; p <= 26; p++){
-                        //         if((((i-1)*6) < p) &&( 5*i > p)){
-                        //             return (
-                        //                 <div className={style.forDiv}>
-                        //                     <div className={style.letter}>
-                        //     <span>
-                        //         {letter + ' '}
-                        //     </span>
-                        //     {props.items.filter(member =>  member.lastName.charAt(0) === letter).map(member => <div>{member.lastName}</div>)}
-                        // </div>
-                        //                 </div>
-                        //             )
-                        //         }
-                        //     }
-                            
-                        // }
