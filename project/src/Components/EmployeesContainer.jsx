@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { addItemsThunk, setUsersAC } from "../Redux/emloyees-reducer";
+import { addItemsThunk, removeUserAC, setUsersAC } from "../Redux/emloyees-reducer";
 import Employees from "./Employees";
 
 

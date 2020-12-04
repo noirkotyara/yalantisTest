@@ -37,22 +37,22 @@ const Employees = React.memo(props => {
     // ---------------------------------------------------------------for Birthdays
 
     useEffect(() => {
-        if(props.items.length !=0 ){
+        if(props.items.length != 0 ){
             props.setUsers([]); 
             props.setUsers(checkboxs);  
         }
 
     }, [checkboxs, props.items.length]); 
-
+//No selected employees
     return (<>
         <div className={style.employees}>
             Employees
            <div>
                 {arr_EN
-                    .map((letter) => {
+                    .map((letter, index, array) => {
                        
                         return (
-                        <div className={style.letter}>
+                        <div  className={style.letter} id='alphabet' key={index.toString()}>
                             <span>
                                 {letter + ' '}
                             </span>
@@ -71,9 +71,9 @@ const Employees = React.memo(props => {
                                 }
                                 return 0;
                                 })
-                            .map(member => {
+                            .map((member, index) => {
                                 isEmpty = true;
-                                return <div className={style.forDiv}>
+                                return <div className={style.forDiv} key={index}>
                                     <span className={style.name}>{member.lastName + member.firstName}</span> 
                                     <input 
                                     className={style.input} 
@@ -97,7 +97,14 @@ const Employees = React.memo(props => {
         <div className={style.empBirthday}>
            Employees Birthdays
             {/* Прізвище Імя - день(31) Місяць, рік(1944) year*/}
-            {
+            {(checkboxs.length === 0) 
+            ?  
+            <div> 
+                <h3>
+                    No selected employees
+                </h3>
+            </div>
+            :
                 props.months.map(
                     month => {
                         return month.id.length != 0 
@@ -107,7 +114,10 @@ const Employees = React.memo(props => {
                                 {month.name}
                             </h3>
                             {
-                                month.id.map(user => { return <div> {user.lastName + ' ' + ' ' + user.firstName } </div> })
+                                month.id.map(user => 
+                                    { return <div> 
+                                        {user.lastName + ' ' + ' ' + user.firstName } 
+                                    </div> })
                             }
                         </div>
                     }
@@ -117,5 +127,6 @@ const Employees = React.memo(props => {
         </div>
     </>);
 });
+
 export default Employees;
 
