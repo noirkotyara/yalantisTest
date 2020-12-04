@@ -3,6 +3,7 @@ import { Employee } from "../Api/api";
 const ADD_ITEMS = 'ADD-ITEMS';
 const SET_USERS = 'SET-USERS';
 
+export const employeesPageClicked = false;
 
 let monthsArray= ["January","February","March","April","May","June","July",
             "August","September","October","November","December"];
@@ -12,8 +13,6 @@ let initial = {
     items: [],
     months: monthsA
 }
-
-
 
 const employeesPage = (state = initial, action) => {
     switch (action.type) {

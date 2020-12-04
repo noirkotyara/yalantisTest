@@ -1,11 +1,5 @@
-
 import employeesPage, { addItemsAC, setUsersAC } from './emloyees-reducer';
 
-// test('renders learn react link', () => {
-//   render(<App />);
-//   const linkElement = screen.getByText(/learn react/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
 let monthsArray= ["January","February","March","April","May","June","July",
             "August","September","October","November","December"];
 let monthsA = monthsArray.map(month => {return {name: month, id: []}});

@@ -1,34 +1,67 @@
-.empBirthday{
-    float:right;
-    width: 30%;
-    border-left: 2px solid black;
-    height: 600px;
-
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap');
 .employees{
     float: left;
     width: 65%;
-    border-left: 2px solid black;
+    margin-left: 30px;
     height: 600px;  
 }
 
-.letter{
-    width: 20%;
-    float: left;
+.empBirthday{
+    float:right;
+    width: 30%;
+    margin-right: 20px;
+    height: 600px;
+}
+.hint{
     text-align: center;
-    min-height: 380px;
+    margin-top: 30px;
+    font-size: 20px;
+    border-bottom: 2px solid cornflowerblue;
+    border-top: 2px solid cornflowerblue;
+    padding: 5px;
+   
+}
+.hintHide{
+    color: white;
+    margin-top: 40px;
+    font-size: 20px;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
     
 }
 
+
+.letter{
+    width: 33%;
+    float: left;
+    text-align: center;
+    min-height: 380px;
+}
+.letterName{
+    padding: 20px;
+    font-size: 30px;
+}
 .forDiv{
     text-align: left;
-    margin-left: 10px;
+    margin-left: 30px;
     
+}
+.titleName{
+    text-align:center;
+    font-size: 25px;
+    border-bottom: 2px solid black;
+    padding: 18px;
+    font-family: 'Texturina', serif;
+    
+}
+.noEmployees{
+    text-align: center;
+    font-family: 'Texturina', serif;
 }
 .name{
     width: 80%;
     float: left;
+    font-size: 16px;
 }
 
 .input {

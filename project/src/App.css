@@ -1,8 +1,9 @@
 .navLink{
   text-decoration: none;
-  border: 2px solid rgb(3, 221, 255);
+  border: 5px solid rgb(3, 221, 255);
   color: black;
-padding: 5px;
+border-radius: 26px;
+  padding: 10px;
 }
 .App-header{
   text-align: center;
@@ -10,17 +11,17 @@ padding: 5px;
 }
 .activeNavLink{
   border: 5px solid rgb(55, 255, 0);
-}
-.content{
- 
+  border-radius: 26px;
+  padding: 10px;
 }
 
-/* .App {
+
+.App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 15vmin;
   pointer-events: none;
 }
 
@@ -31,8 +32,7 @@ padding: 5px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,7 +52,7 @@ padding: 5px;
   to {
     transform: rotate(360deg);
   }
-} */
+} 
 
 
 
